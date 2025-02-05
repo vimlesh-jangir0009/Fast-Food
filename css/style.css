@@ -469,9 +469,9 @@ display: flex;
     background-size: 31% 31%;
 }
 .play-icon-img img {
-    position: absolute;
+    position: relative;
     top: 100px;
-    left: 38%;
+    left: 175px;
     cursor: pointer;
 }
 .play-content {
@@ -501,6 +501,25 @@ button.order-now-btn:hover {
 .play-content h6 {
     padding-bottom: 30px;
 }
+.displayblock{
+    display: block;
+}
+/* video css */
+div#videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#myVideo{
+    width:485px;
+     height:350px;
+     
+}
+.displayhide{
+    display: none;
+}
+
+/*  */
 /* visit-section css */
 section.visit-section {
     padding: 70px 0;
@@ -667,7 +686,7 @@ iframe {
     
     border: none;
 }
-.col-md-4.map-content {
+.col-md-4.mapcontent {
     margin: 0 auto;
     position: absolute;
     top: 140px;
@@ -770,6 +789,10 @@ footer {
     padding: 0%;
     line-height: 2.5;
     transition: 0.7s;
+}
+.footer-i-align a {
+    text-decoration: none;
+    color: black;
 }
 .footer-about ul li a:hover {
   color: #000;
@@ -874,25 +897,139 @@ section.started {
     text-align: center;
     font-weight: 300;
 }
+a.back-to-top-arrow {
+    color: #00D664;
+    font-size: 30px;
+    display: flex
+;
+    justify-content: end;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    /* transition: 0.8s; */
+}
 /* end */
 
-@media only screen and (max-width: 767px) {
 
+
+@media only screen and (max-width: 767px){
     .sticky {
-     
         background-color: #fff6f6;
-    
+    }
+    .nav {
+        background-color: #000;
+        position: absolute;
+        top: 0%;
+        /* color: #fff; */
+    }
+    span.navbar-toggler-icon {
+        background-color: #fff;
     }
     .navbar-light .navbar-brand {
-        color: rgb(1 1 1 / 90%) !important;
+        color: rgba(255, 251, 251, 0.9) !important;
     }
     .nav-a-tag a {
-    
-        color: #000000 !important;
+        color: #ffffff !important;
     }
+    button.order-btn {
+        padding: 10px 15px 10px 15px;
+        border-radius: 10px;
+        width: 36%;
+    }
+    .ft-42 {
+        font-size: 2rem;
+    }
+    .ft-58-n {
+        font-size: 3rem;
+    }
+    .specialize-flex {
+        flex-direction: column-reverse;
+    }
+    .specialize-heading-div p {
+        padding-top: 10px;
+    }
+    .specialize-img-div img {
+        max-width: 100%;
+    }
+    .specialize-left-con h6 {
+        margin-bottom: 30px;
+    }
+    .freshest-img img {
+        margin-right: 10px;
+    }
+    section.specialize-section {
+        padding: 45px 0;
+    }
+    .ft-34 {
+        font-size: 30px;
+    }
+    .service-section {
+        padding: 50px 0;
+    }
+    .anniversaries {
+        margin: 10px 0;
+    }
+    .ft-20 {
+        font-size: 22px;
+    }
+    .learn-more-btn {
+        font-size: 16px;
+    }
+    .our-service-button {
+        padding: 30px 0 0 0;
+    }
+    .classic-padding {
+        padding: 15px 0px 15px 0px;
+    }
+    .classic-content {
+        margin-bottom: 25px;
+    }
+    .classic-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .play-img {
+        max-width: 95% !important;
+    }
+    .play-dots-bg {
+        background-position: 97% 85%;
+        background-size: 50% 50%;
+    }
+    .play-icon-img img {
+        top: 75px;
+        left: 140px;
+    }
+    button.order-now-btn {
+        margin-top: 10px;
+    }
+    .visit-head h2 {
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+    .sale-label h6 {
+        padding: 10px 17px;
+    }
+    .ft-14 {
+        font-size: 1.3rem;
+    }
+    input#email-input {
+        padding: 15px 15px 15px 10px;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+    button#subscribe-button {
+        padding: 15px 10px 15px 10px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+
+
+
 }
 /*As per Latest CSS Level 4 Guideline*/
-@media (767px < width <= 991px) {
+@media (768px < width <= 991px) {
 
  .sticky {
  

@@ -10,7 +10,9 @@
 <!-- swiper slider link -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <!--  -->
 <!-- google font cdn link -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +35,16 @@
       });
   });
 </script>
+
+<script>
+$(document).ready(function(){
+  $("#cancelbutton").click(function(){
+    $(".mapcontent").addClass("displayhide");
+  });
+});
+
+</script>
+
 </head>
 <body>
     
@@ -181,7 +193,7 @@
 <section class="specialize-section">
     <div class="container">
         <div class="specialize-heading">
-            <div class="col-md-10">
+            <div class="col-md-10 specialize-heading-div">
                 <h6 class="ft-58-n">Catering services in New York</h6>
                 <h5 class="ft-42">We specialize in corporate and private events
                 </h5>
@@ -191,7 +203,7 @@
         </div>
 
         <div class="specialize-flex">
-            <div class="col-md-5">
+            <div class="col-md-5 ">
                 <div class="specialize-left-con">
                     <h6 class="ft-28">Our passion is stirred by the colors,
                     flavors, and exotic textures
@@ -451,9 +463,13 @@
 <div class="row">
   <div class="col-md-6 play-dots-bg">
     <div class="play-img " >
-      <img src="css/images/Rectangle 80.png" alt="play-image">
+      <img src="css/images/Rectangle 80.png" alt="play-image" id="playicon">  
       <div class="play-icon-img" id="videoContainer">
-        <!-- <video id="myVideo" src="/css/video/fast-food semple video.mp4" poster="poster-image.jpg"></video> -->
+
+        <!-- <video  controls id="myVideo" autoplay muted loop   poster="./css/images/poster.png">
+          <source src="/css/video/fast-food making video.mp4" type="video/mp4" >
+        </video> -->
+
         <img src="./css/images/play.png" alt="play-icon-image">
       </div>
     </div>
@@ -921,6 +937,7 @@
 <i class="bi bi-arrow-right-short slider-r-arrow "></i>
 </div> 
 </section>
+
 <section class="subscribe">
   <div class="container">
    <div class="subscribe-box">
@@ -959,9 +976,9 @@
   <!-- </div> -->
 <!-- </div> -->
 <div class="map-container">
-  <div class="col-md-4 col-sm-8 map-content">
+  <div class="col-md-4 col-sm-8 mapcontent">
     <div class="cancle-icon">
-      <i class="bi bi-x-square map-cancel "></i>
+      <i class="bi bi-x-square map-cancel " id="cancelbutton"></i>
     </div>
     <div class="row">
       <div class="col-md-2">
@@ -1021,9 +1038,9 @@
             </ul>
           </div>
            <div class="footer-i-align">
-             <i class="bi bi-facebook footer-i"></i>
-            <i class="bi bi-instagram footer-i"></i>
-            <i class="bi bi-twitter-x footer-i"></i>
+           <a href="#"><i class="bi bi-facebook footer-i"></i></a> 
+           <a href="#"><i class="bi bi-instagram footer-i"></i></a>
+           <a href="#"> <i class="bi bi-twitter-x footer-i"></i></a>
           </div>
           
          
@@ -1172,6 +1189,9 @@
     </div>
     <div class="copyright">
       <h6> &copy;&nbsp; 2021 Hello All right reserved.</h6>
+    </div>
+    <div>
+      <a href="#" class="back-to-top-arrow"><i class="bi bi-arrow-up-square-fill" ></i></a>
     </div>
   </div>
 </section>
