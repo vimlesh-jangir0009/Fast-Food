@@ -731,6 +731,7 @@ footer {
 .footer-i {
     font-size: 16px;
     margin: 0px 5px 0 5px;
+    line-height: 2;
 }
 .footer-i:hover {
     color: #000ffd;
@@ -971,10 +972,13 @@ a.back-to-top-arrow {
         margin: 10px 0;
     }
     .ft-20 {
-        font-size: 22px;
+        font-size: 18px;
     }
     .learn-more-btn {
         font-size: 16px;
+    }
+    .ft-18-n {
+        font-size: 1rem;
     }
     .our-service-button {
         padding: 30px 0 0 0;
@@ -1008,13 +1012,22 @@ a.back-to-top-arrow {
         padding-bottom: 50px;
     }
     .sale-label h6 {
-        padding: 10px 17px;
+        padding: 5px 5px;
     }
     .ft-14 {
         font-size: 1.3rem;
     }
+    .service-heading h6 {
+        margin: 0 0 30px 0;
+    }
+    .check-out-section {
+        padding: 30px 0 70px 0;
+    }
+    .ft-34-w {
+        font-size: 27px;
+    }
     input#email-input {
-        padding: 15px 15px 15px 10px;
+        padding: 15px 15px 15px 20px;
         margin: 0 auto;
         font-size: 18px;
     }
@@ -1023,10 +1036,96 @@ a.back-to-top-arrow {
         margin: 0 auto;
         margin-top: 20px;
     }
-
-
-
-
+    .swiper-slide img {
+        width: 25%;
+        margin-bottom: 10px;
+    }
+    .swiper {
+        width: 80%;
+        height: 100%;
+    }
+    .slider-arrow {
+        margin: 0 8px;
+    }
+    .subscribe-h >h3 {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    footer {
+        padding: 0px 0 0px 0;
+    }
+    .footer-box {
+        width: 50% !important;
+    }
+    .footer-about ul li a {
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    .footer-ul-div ul li a {
+        font-size: 14px;
+    }
+    .footer-about h6 {
+        font-size: 16px;
+    }
+    .footer-links-list {
+        padding: 20px 0;
+    }     
+    .ft-72 {
+        font-size: 1.6rem;
+    }
+    #started-email {
+        width: 16rem !important;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .search-btn {
+        width: 9rem !important;
+        font-weight: 300;
+        padding: 11px 5px 7px 5px;
+        font-size: 14px;
+    }
+    .footer-box-flex {
+        flex-direction: column;
+    }
+    .col-md-4.mapcontent {
+        top: 170px;
+        right: 100px;
+        padding: 10px 10px;
+    }
+    .ft-14-n {
+        font-size: 0.775rem;
+    }
+    .ft-15-blue {
+        font-size: 0.838rem !important;
+    }
+    .font-16 {
+        font-size: 15px;
+    }
+    .ft-28 {
+        font-size: 20px !important;
+    }
+    .Spellon h5 {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .started-i {
+        font-size: 20px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .started-ul ul li a {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    a.back-to-top-arrow {
+        bottom: 20px !important;
+        right: 20px;
+    }
+    .copyright h6 {
+        font-size: 14px;
+    }
 }
 /*As per Latest CSS Level 4 Guideline*/
 @media (768px < width <= 991px) {
