@@ -38,9 +38,20 @@
 
 <script>
 $(document).ready(function(){
+
   $("#cancelbutton").click(function(){
     $(".mapcontent").addClass("displayhide");
   });
+  });
+
+
+$(document).ready(function(){
+  $("#toggleicon").click(function(){
+$(".nav").removeClass("topnav");
+});
+  $("#closeicon").click(function(){
+$(".nav").addClass("topnav");
+});
 });
 
 </script>
@@ -53,10 +64,10 @@ $(document).ready(function(){
     
 <section class="hero-bennar">
 
-    <div class="nav">
+    <!-- <div class="nav">
         <nav class="navbar navbar-expand-lg navbar-light w-100 ">
           <div class="container">
-            <!-- <div class="nav-flex"> -->
+    
             <div class="nav-brand">
               <a class="navbar-brand text-white fw-bold ft-22" href="#">Sway</a>
             </div>
@@ -68,7 +79,7 @@ $(document).ready(function(){
 
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <!-- <span id="closeiconspan"><i class="bi bi-x-square closeicon" id="closeicon"></i></span> -->
+        
               <ul class="navbar-nav me-0  ms-auto mb-2 mb-lg-0">
     
                 <li class="nav-item dropdown nav-a-tag">
@@ -164,7 +175,141 @@ $(document).ready(function(){
             </div>
           </div>
         </nav>
-    </div> 
+    </div>  -->
+
+<div class="mnavbox">
+  <div class="row justify-content-between align-items-center" >
+    <div class="col-10"> <h2 class="ft-22 ps-3" >Sway</h2></div>
+   <div class="col-2"> <span class="bi bi-list btn toggle-icon" id="toggleicon"></span></div>
+  </div>
+</div>
+    
+    <div class="nav topnav">
+      <nav class="navbar navbar-expand-lg navbar-light w-100  ">
+        <div class="container-fluid">
+
+  
+          <div class="flexnavbar ">
+
+          <div class="col-md-2 col-12">
+            <div class="row justify-content-between">
+              <div class="nav-brand col-9">
+                <a class="navbar-brand text-white fw-bold ft-22" href="#">Sway</a>
+              </div>
+              <div class="col-2">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+              <i class="bi bi-x-square closeicon" id="closeicon"></i>
+            </button>
+          </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-12 col-12 mobilepossition" id="mobilepossition">
+        
+
+          
+          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+      
+            <ul class="navbar-nav me-0  ms-auto mb-2 mb-lg-0">
+  
+              <li class="nav-item dropdown nav-a-tag">
+                <a class="nav-link dropdown-toggle "id="nav-link-a-tag " href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Demos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Action</a></li>
+                  <li class="dropdown"><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown nav-a-tag">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Action</a></li>
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown nav-a-tag">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Action</a></li>
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-a-tag">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Action</a></li>
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-a-tag">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Action</a></li>
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-a-tag">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Blocks
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Action</a></li>
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-a-tag">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Elements
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Action</a></li>
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-a-tag">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Extra
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li class="dropdown"><a class="dropdown-item" href="#">Action</a></li>
+                  <li  class="dropdown"><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <li class=" nav-item nav-a-tag"><img src=".//css/images/usa-flag.png" class="nav-link" alt="usa-flag.png">
+              </li>
+              <li class="nav-item nav-a-tag"><a href="#" class="nav-link"><i class="bi bi-suit-heart nav-icon"></i></a>
+              </li>
+              <li class="nav-item nav-a-tag"><a href="#" class="nav-link"><i class="bi bi-cart3 nav-icon"></i></a></li>
+              <li class="nav-item nav-a-tag"><a href="#" class="nav-link"><i class="bi bi-search nav-icon"></i></a></li>
+              <button class="order-btn"  > Order now</button>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </nav>
+  </div>
 
     <div class="container">
         <div class="hero-content">

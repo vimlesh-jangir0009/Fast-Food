@@ -49,6 +49,11 @@ color: #fff;
     font-family:"MrsSaintDelafield-Regular";
     color: #ACACAC;
 }
+.ft-58-new{
+    font-size: 3.125rem;
+    font-family:"MrsSaintDelafield-Regular";
+    color: #ACACAC;
+}
 .ft-42{
     font-size: 2.625rem;
     font-family:"NeueHaasUnica-Regular";
@@ -156,6 +161,9 @@ font-family:"NeueHaasUnica-Regular";
     z-index: 111;
     background: rgba(0, 0, 0, 0.5);
 }
+.mnavbox{
+    display: none;
+}
 .hero-bennar{
     background-image: url(images/hero-bennar.png);
     height: auto;
@@ -197,6 +205,13 @@ i.closeicon {
     color: #fff;
     font-size: 24px;
     display: none;
+}
+.flexnavbar {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 .flex {
     display: flex;
@@ -328,8 +343,8 @@ section.specialize-section {
     padding: 70px 0;
     background-image: url(images/Dots.png);
     background-repeat: no-repeat;
-    background-size: 17% 25%;
-    background-position: 94% 54%;
+    background-size: 18% 24%;
+    background-position: 95% 64%;
 }
 .service-heading {
     text-align: center;
@@ -915,6 +930,7 @@ a.back-to-top-arrow {
     z-index: 9999;
     /* transition: 0.8s; */
 }
+
 /* end */
 
 
@@ -929,17 +945,47 @@ a.back-to-top-arrow {
         top: 0%;
         /* color: #fff; */
     }
+    .mnavbox{
+        display: block;
+        background-color: #000;
+    }
+    .topnav {
+        display: flex
+    ;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+.navtransform{
+    transform: translateX(0%);
+    transition: 0.5s;
+}
+    .flexnavbar {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    i.closeicon {
+        color: #fff;
+        font-size: 24px;
+     display: block;
+    }
+    .ft-58-new {
+        font-size: 2rem !important;
+        font-family: "MrsSaintDelafield-Regular";
+        color: #ACACAC !important;
+    }
     span.bi.bi-list.toggle-icon {
         color: #fff;
         font-size: 30px;
     }
-    i.closeicon {
-        display: block;
-        display: flex
-;
-        justify-content: end;
-        padding: 10px 17px 0 0;
+    ul.dropdown-menu.show {
+        background-color: currentColor;
     }
+  
     span.navbar-toggler-icon {
         background-color: #fff;
     }
