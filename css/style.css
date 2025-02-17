@@ -936,6 +936,9 @@ a.back-to-top-arrow {
 
 
 @media only screen and (max-width: 767px){
+    .hero-bennar {
+        background-size: cover;
+    }
     .sticky {
         background-color: #fff6f6;
     }
